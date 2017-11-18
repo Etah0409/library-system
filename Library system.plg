@@ -1,0 +1,39 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Library system - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\asus\AppData\Local\Temp\RSP5740.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/Library system.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\library system\library system\system_main_alg.c"
+]
+Creating command line "cl.exe @C:\Users\asus\AppData\Local\Temp\RSP5740.tmp" 
+Creating temporary file "C:\Users\asus\AppData\Local\Temp\RSP5741.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/Library system.pdb" /debug /machine:I386 /out:"Debug/Library system.exe" /pdbtype:sept 
+".\Debug\Login.obj"
+".\Debug\system_main_alg.obj"
+".\Debug\system_reader_alg.obj"
+".\Debug\warden_system.obj"
+]
+Creating command line "link.exe @C:\Users\asus\AppData\Local\Temp\RSP5741.tmp"
+<h3>Output Window</h3>
+Compiling...
+system_main_alg.c
+Linking...
+warden_system.obj : error LNK2005: "void __cdecl Error(void)" (?Error@@YAXXZ) already defined in Login.obj
+warden_system.obj : error LNK2005: "struct _iobuf * fp" (?fp@@3PAU_iobuf@@A) already defined in Login.obj
+Debug/Library system.exe : fatal error LNK1169: one or more multiply defined symbols found
+Error executing link.exe.
+
+
+
+<h3>Results</h3>
+Library system.exe - 3 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
